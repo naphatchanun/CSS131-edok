@@ -51,6 +51,11 @@ const Thegoal = () => {
                 <img src={arrow} alt="" width="150px" />
                 <input type="text" className='w-[60px] h-[40px] border-2 border-[#FDE2F3] rounded-lg' />
             </div>
+            <div className='flex justify-center pt-10 gap-10'>
+              <button className='border-1 p-2  rounded-full border-[#71a0c7] bg-[#71a0c7]'>
+                SUBMIT 
+              </button>
+            </div>
         </div>
 
     </div>

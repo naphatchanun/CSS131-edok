@@ -36,7 +36,7 @@ const Gpapage = () => {
               <input type="text" className='border-2 border-[#FDE2F3] rounded-lg w-[250px] h-[40px]'/>
             </div>
             <div className='flex justify-center pt-10 gap-10'>
-              <button className='border-1 p-2 rounded-lg  rounded-full border-[#71a0c7] bg-[#71a0c7]'>
+              <button className='border-1 p-2   rounded-full border-[#71a0c7] bg-[#71a0c7]'>
                 SUBMIT 
               </button>
             </div>
@@ -70,7 +70,7 @@ const Gpapage = () => {
               <input type="text" className='border-2 border-[#FDE2F3] rounded-lg w-[250px] h-[40px]'/>
             </div>
             <div className='flex justify-center pt-10 gap-10'>
-              <button className='border-1 p-2 rounded-lg  rounded-full border-[#71a0c7] bg-[#71a0c7]'>
+              <button className='border-1 p-2 rounded-full border-[#71a0c7] bg-[#71a0c7]'>
                 SUBMIT 
               </button>
             </div>
