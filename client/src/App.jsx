@@ -5,7 +5,7 @@ import './App.css'
 import Menubar from './Components/Menubar'
 import HomeGPABeU from './HomeGPABeU'
 import { Route, Routes } from 'react-router-dom'
-import GPApage from './gpapage'
+import GPApage from './Gpapage'
 import Thegoal from './Thegoal'
 import Contact from './Contact'
 
