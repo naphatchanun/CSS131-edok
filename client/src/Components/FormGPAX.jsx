@@ -13,7 +13,7 @@ const FormGPAX = () => {
         const { name, value } = event.target;
         setGPAX((prevGPAX) => ({
             ...prevGPAX,
-            [name]: parseInt(value),
+            [name]: parseFloat(value),
         }));
     }
 

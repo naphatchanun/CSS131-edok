@@ -15,7 +15,7 @@ const FormGPA = () => {
         // console.log(name); // Print the name of the input field
         setGPA((prevGPA) => ({
             ...prevGPA,
-            [name]: parseInt(value),
+            [name]: parseFloat(value),
         }));
 
     }
