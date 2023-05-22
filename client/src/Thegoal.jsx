@@ -65,7 +65,7 @@ const Thegoal = () => {
                     return (
                         <div key={index}>
                             <h1>{item.subject}</h1>
-                            <h1>{item.credit}</h1>
+                            {/* <h1>{item.credit}</h1> */}
                             <h1>{item.gpa}</h1>
 
                         </div>
