@@ -48,18 +48,18 @@ const FormGPAX = () => {
 
     return (
         <>
-            <div>
-                <input type="number" placeholder="CREDIT" name="creditgpx" onChange={handleAddGPAX} />
-                <input type="number" placeholder="SCORE" name='gpa' onChange={handleAddGPAX} />
-                <div>
-                    <button type="submit" onClick={addGPAX}>ADD</button>
+            <div className='pt-5'>
+                <input className='border p-2 rounded-full border-[#71a0c7]' type="number" placeholder="CREDIT" name="creditgpx" onChange={handleAddGPAX}  />
+                <input className='border p-2 rounded-full border-[#71a0c7]' type="number" placeholder="SCORE" name='gpa' onChange={handleAddGPAX} />
+                <div className='flex justify-center pt-5'>
+                    <button className='border p-2 rounded-full border-[#71a0c7] bg-gradient-to-r from-[#BA90C6] to-[#E8A0BF] hover:from-[#975C8D] hover:to-[#FFABAB]' type="submit" onClick={addGPAX}>ADD</button>
                 </div>
                 <div>{calculateGPAX()}</div>
             </div>
             <div>
                 {allsetGPAX.map((item, index) => {
                     return (
-                        <div key={index} className='bg-red-600 m-10'>
+                        <div key={index} className='bg-[#F2BED1] m-10  '>
                             <h1>เทอมที่{index + 1}</h1>
                             <h1>{item.creditgpx}</h1>
                             <h1>{item.gpa}</h1>

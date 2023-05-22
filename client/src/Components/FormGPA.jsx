@@ -69,18 +69,18 @@ const FormGPA = () => {
     console.log(gpa);
     return (
         <>
-            <div>
-                <input type="number" placeholder="CREDIT" name="credit" onChange={handleAddGrade} />
-                <input type="number" placeholder="SCORE" name="score" onChange={handleAddGrade} />
-                <div>
-                    <button type="submit" onClick={addGrade}>ADD</button>
+            <div className='pt-5'>
+                <input className='border p-2 rounded-full border-[#71a0c7]'type="number" placeholder="CREDIT" name="credit" onChange={handleAddGrade} />
+                <input className='border p-2 rounded-full border-[#71a0c7]'type="number" placeholder="SCORE" name="score" onChange={handleAddGrade} />
+                <div className='flex justify-center pt-5'>
+                    <button className='border p-2 rounded-full border-[#71a0c7] bg-gradient-to-r from-[#BA90C6] to-[#E8A0BF] hover:from-[#975C8D] hover:to-[#FFABAB]' type="submit" onClick={addGrade}>ADD</button>
                 </div>
             </div>
             <div>
                 {allset.map((item, index) => {
                     return (
-                        <div key={index} className='bg-red-600 m-10'>
-                            <h1>วิชาที่{index + 1}</h1>
+                        <div key={index} className='bg-[#F2BED1] m-10'>
+                            <h1 >วิชาที่{index + 1}</h1>
                             <h1>{item.credit}</h1>
                             <h1>{item.score}</h1>
                         </div>

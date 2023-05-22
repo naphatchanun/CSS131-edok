@@ -48,15 +48,17 @@ const Thegoal = () => {
         <div className='bg-[#fffded] h-screen'>
             <div>
                 <div className='flex justify-center pt-5'>
-                    <img src={thegoal} alt="" width="250px" />
+                    <img src={thegoal} alt="" width="300px" height='100px' />
                 </div>
                 <div>
-                    <h1>ใส่วิชาและหน่วยกิต</h1>
-                    <input type="text" placeholder="Subject" name="subject" onChange={handleAddGPAX} />
-                    <input type="number" placeholder="credit" name="credit" onChange={handleAddGPAX} />
-                    <input type="number" placeholder='GPA' name="gpa" onChange={handleAddGPAX} />
-                    <div>
-                        <button type="submit" onClick={addGPAX}>ADD</button>
+                    <h1 className='flex justify-center pt-5'>ใส่วิชาและหน่วยกิต</h1>
+                    <div className='flex justify-center pt-5 '> 
+                        <input className='border p-2 rounded-full border-[#71a0c7]' type="text" placeholder="Subject" name="subject" onChange={handleAddGPAX} />
+                        <input className='border p-2 rounded-full border-[#71a0c7]'type="number" placeholder="credit" name="credit" onChange={handleAddGPAX} />
+                        <input className='border p-2 rounded-full border-[#71a0c7]' type="number" placeholder='GPA' name="gpa" onChange={handleAddGPAX} />
+                    </div>
+                    <div className='flex justify-center pt-5 '>
+                        <button className='border p-2 rounded-full border-[#71a0c7] bg-gradient-to-r from-[#BA90C6] to-[#E8A0BF] hover:from-[#975C8D] hover:to-[#FFABAB]'type="submit" onClick={addGPAX}>ADD</button>
                     </div>
                 </div>
                 {allsetstudy.map((item, index) => {
