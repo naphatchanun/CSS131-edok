@@ -7,7 +7,7 @@ const Thegoal = () => {
 
 
     const [study, setstudy] = useState({
-        subject: '', gpa: 0, credit: 0
+        subject: '', gpa: 0, credit: 0,grade: ''
     });
     const [allsetstudy, setallSetSTUDY] = useState([]);
 
@@ -36,6 +36,23 @@ const Thegoal = () => {
         // console.log(study.credit);
         // console.log("============================")
         console.log(study);
+        if (study.gpa >= 0.1 && study.gpa <= 0.4) {
+            study.grade = 'F'
+        } else if (study.gpa >= 0.5 && study.gpa <= 1.0) {
+            study.grade = 'D'
+        } else if (study.gpa >= 1.1 && study.gpa <= 1.4) {
+            study.grade = 'D+'
+        } else if (study.gpa >= 1.5 && study.gpa <= 2.0) {
+            study.grade = 'C'
+        } else if (study.gpa >= 2.1 && study.gpa <= 2.4) {
+            study.grade = 'C+'
+        } else if (study.gpa >= 2.5 && study.gpa <= 3.0) {
+            study.grade = 'B'
+        } else if (study.gpa >= 3.1 && study.gpa <= 3.4) {
+            study.grade = 'B+'
+        } else if (study.gpa >= 3.5 && study.gpa <= 4.0) {
+            study.grade = 'A'
+        }
         setallSetSTUDY((prevallSetSTUDY) => {
             return [...prevallSetSTUDY, study];
         })
@@ -67,6 +84,7 @@ const Thegoal = () => {
                             <h1>{item.subject}</h1>
                             {/* <h1>{item.credit}</h1> */}
                             <h1>{item.gpa}</h1>
+                            <h1>{item.grade}</h1>
 
                         </div>
                     )
