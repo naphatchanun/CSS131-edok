@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from '../Images/calculator.png'
+import { NavLink } from "react-router-dom";
 
 
 function Menubar() {
@@ -9,16 +10,16 @@ function Menubar() {
                 <img src={Logo} alt="" width="70px"/>
                 <ul className="text-[18px] flex gap-10 justify-between items-center">
                     <li className="border-2 p-2 rounded-full bg-gradient-to-r from-[#B0CAC7] to-[#F7D6BF]">
-                        <a href="/">HOME</a>
+                        <NavLink to='/'>HOME</NavLink>
                     </li>
                     <li className="border-2 p-2 rounded-full bg-gradient-to-r from-[#B0CAC7] to-[#F7D6BF] ">
-                        <a href="/GPApage">GPAX/GPA</a>
+                        <NavLink to='/GPApage'>GPAX/GPA</NavLink>
                     </li>
                     <li className="border-2 p-2 rounded-full bg-gradient-to-r from-[#B0CAC7] to-[#F7D6BF]">
-                        <a href="/TheGoalpage">THE GOAL</a>
+                        <NavLink to='/TheGoalpage'>THE GOAL</NavLink>
                     </li>
                     <li className="border-2 p-2 rounded-full bg-gradient-to-r from-[#B0CAC7] to-[#F7D6BF]">
-                        <a href="/Contact">CONTACT</a>
+                        <NavLink to='/Contact'>CONTACT</NavLink>
                     </li>
                 </ul>
                 <img src={Logo} alt="" width="70px"/>
