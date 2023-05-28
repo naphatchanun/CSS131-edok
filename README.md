@@ -11,6 +11,7 @@
  - **ขั้นตอนการใช้งาน**
  
  1.กรอกหน่วยกิตเเต่ละรายวิชาวิชาเเละคะเเนนเเต่ละรายวิชา
+ 
  ![enter image description here](https://cdn.discordapp.com/attachments/1037626127579107360/1112255584004223066/image.png)
 
    2.กดปุ่ม ADD
