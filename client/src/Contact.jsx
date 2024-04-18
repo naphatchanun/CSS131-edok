@@ -9,6 +9,9 @@ const Contact = () => {
         <div className=" flex justify-center pt-10">
           <img src={Picture} alt="" width="300px" height="100px" />
         </div>
+        <div className="flex justify-start mt-20 pt-10 h-[200px]">
+          <img src={Name} alt="" width="600px" />
+        </div>
       </div>
     </div>
   );
